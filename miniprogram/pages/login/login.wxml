@@ -1,0 +1,27 @@
+<view class="login-page">
+  <view class="login-wrap">
+    <view class="page-title">
+      <text>登录</text>
+    </view>
+    <view class="username">
+      <input type="text" placeholder="输入用户名" bindtap="inputFocus" bindblur="usernameBlur"/>
+    </view>
+    <view class="password">
+      <input type="password" placeholder="输入密码" bindtap="inputFocus" bindblur="passwordBlur"/>
+    </view>
+    <view class="tips" wx:if="{{isTips}}">
+      <text class="color-danger">{{tips}}</text>
+    </view>
+    <view class="link">
+      <view class="link-item">忘记密码</view>
+      <view class="link-item" bindtap="toRegister">注册</view>
+    </view>
+    <view class="login-btn" bindtap="login">
+      登录
+    </view>
+    <view class="agree">
+      <checkbox id="agree-check" bindtap="agreeProtocol"></checkbox>
+      <label for="agree-check" class="agree-text">同意<text>服务协议</text>和<text>隐私政策</text></label>
+    </view>
+  </view>
+</view>

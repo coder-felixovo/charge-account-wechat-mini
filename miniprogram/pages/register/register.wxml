@@ -1,0 +1,31 @@
+<view class="register-page">
+  <view class="register-wrap">
+    <view class="page-title">
+      <text>注册</text>
+    </view>
+    <view class="username">
+      <input type="text" maxlength="20" placeholder="请输入用户名" bindfocus="inputFocus" bindblur="setUsername" />
+    </view>
+    <view class="password">
+      <input type="password" maxlength="20" placeholder="请输入密码" bindfocus="inputFocus" bindblur="setPassword"/>
+    </view>
+    <view class="code">
+      <input type="text" placeholder="验证码" bindfocus="inputFocus" bindblur="setCode"/>
+      <view bindtap="refreshCode">{{securityCode}}</view>
+    </view>
+    <view class="tips" wx:if="{{isTips}}">
+        <text class="color-danger">{{tips}}</text>
+    </view>
+    <view class="link">
+      <text>忘记密码</text>
+      <text bindtap="toLogin">已有账号</text>
+    </view>
+    <view class="register-button" bindtap="register">
+      注册
+    </view>
+    <view class="agree">
+      <checkbox bindtap="agreeProtocol" class="radio"></checkbox>
+      <label for="agree">同意<text>服务协议</text>和<text>隐私政策</text></label>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,84 @@
+input {
+  width: 100%;
+  border-bottom: 1px solid #333;
+}
+
+.register-page {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.register-wrap {
+  box-sizing: border-box;
+  overflow: hidden;
+  height: inherit;
+  padding: 0 140rpx;
+}
+
+.page-title {
+  margin-top: 140rpx;
+  text-align: center;
+  font-size: 50rpx;
+}
+
+.username,
+.password,
+.code,
+.link,
+.register-button,
+.tips,
+.agree {
+  margin-top: 60rpx;
+  font-size: 36rpx;
+}
+
+.username {
+  margin-top: 100rpx;
+}
+
+.code {
+  display: flex;
+  input {
+    width: 200rpx;
+  }
+  view {
+    width: fit-content;
+    margin-left: 20rpx;
+    border: 0.5px solid rgb(38,38,38);
+    font-size: 32rpx;
+  }
+}
+
+.tips {
+  font-size: 30rpx;
+}
+
+.link {
+  text {
+    font-size: 30rpx;
+    color: blue;
+    margin-right: 20rpx;
+  }
+}
+
+.register-button {
+  height: 80rpx;
+  background-color: rgba(137, 208, 239, 0.9);
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 42rpx;
+}
+
+.agree {
+  label {
+    width: fit-content;
+    margin-left: 10rpx;
+    font-size: 32rpx;
+  }
+  text {
+    color: rgb(var(--color-brand))
+  }
+}
+
+
